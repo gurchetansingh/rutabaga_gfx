@@ -1,25 +1,25 @@
 # Copyright 2025 Magma-GPU project
 # SPDX-License-Identifier: MIT
 
-dep_libc = dependency('libc-0.2-rs',
+dep_libc = dependency('rust-libc',
   version: '>= 0.2.153',
   fallback: ['libc-0.2-rs', 'dep_libc'],
   required: true,
 )
 
-dep_log = dependency('log-0.4-rs',
+dep_log = dependency('rust-log',
   version: '>= 0.4',
   fallback: ['log-0.4-rs', 'dep_log'],
   required: true,
 )
 
-dep_serde = dependency('serde-1-rs',
+dep_serde = dependency('serde',
   version: '>= 1',
   fallback: ['serde-1-rs', 'dep_serde'],
   required: true,
 )
 
-dep_serde_json = dependency('serde_json-1-rs',
+dep_serde_json = dependency('serde_json',
   version: '>= 1',
   fallback: ['serde_json-1-rs', 'dep_serde_json'],
   required: true,
